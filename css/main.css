@@ -1,0 +1,1079 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #19171a;
+    /*#19171a*/
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.11rem;
+    color: aliceblue;
+}
+
+h3,
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.11rem;
+    padding-top: 2%;
+    padding-top: 2%;
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+/* All the new shit will go in between these two comment sections NEW */
+.page-header {
+    padding: 1rem 0;
+    background-color: #541678;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    /* max-width: 1300px; */
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 1rem;
+    /* Optional: adds space between items */
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.35rem;
+    flex: 1;
+    min-width: 0;
+    position: relative;
+}
+
+.login-nav {
+    margin-bottom: 0.25rem;
+}
+
+.logo-container {
+    flex: 0 0 auto;
+    /* Don't grow, don't shrink, auto basis */
+    min-width: 200px;
+    /* Optional: ensures logo container has minimum width */
+}
+
+.page-logo {
+    max-width: 200px;
+    /* Control the logo size */
+    height: auto;
+    display: block;
+}
+
+.page-title {
+    flex: 0 0 auto;
+    /* Don't grow, don't shrink, auto basis */
+    margin: 0;
+    text-align: center;
+    /* Centers the title */
+    min-width: 150px;
+    /* Optional: ensures title has minimum width */
+}
+
+.page-title a {
+    color: white !important;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* Pushes nav to the right */
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 24px;
+}
+
+.nav-links a {
+    color: white !important;
+    text-decoration: underline;
+}
+
+/* Footer Stuff */
+
+.page-footer {
+    padding: 1rem 0;
+    background-color: #541678;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Comments page stuff */
+
+.posts {
+    background-color: rgb(59, 57, 57);
+    color: aliceblue;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 3000px;
+    /* Adjust this value as needed for desired width */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+}
+
+.post-body {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.comment-actions {
+    margin-top: 1rem;
+}
+
+.comment-action-button {
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.65rem 1.1rem;
+    text-transform: uppercase;
+}
+
+.comment-action-button:hover {
+    background-color: aliceblue;
+    color: #19171a;
+}
+
+.comment-reply-input {
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.admin-reply {
+    margin-top: 1rem;
+    padding: 0.9rem;
+    border-left: 4px solid aliceblue;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.admin-reply p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+}
+
+/* All the new shit will go in between these two comment sections NEW */
+
+.mobile-nav {
+    padding: 10px;
+    margin-bottom: 17px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-basis: 100%;
+    gap: 25px;
+}
+
+.fading-out {
+    opacity: 1;
+    transition: opacity 0 ease;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.3s all;
+}
+
+.meet-team-mobile {
+    display: none;
+}
+
+.meet-team {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.meet-team img {
+    max-width: 55%;
+    padding-right: 3%;
+    float: left;
+}
+
+.hide-on-desk {
+    display: none;
+}
+
+.introduction {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.burger-button {
+    display: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.footer-logo {
+    width: 10%;
+}
+
+label {
+    font-weight: bolder;
+}
+
+input,
+select,
+textarea {
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 8rem;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+.hero-banner-desk {
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    width: 90%;
+    height: 10%;
+    align-items: center;
+
+}
+
+.body-wrapper {
+    flex: 1;
+    justify-content: space-between;
+    margin: 0;
+    /* min-height: 150vh; */
+    padding-bottom: 2%;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-button-image {
+    width: 70px;
+}
+
+.social-media {
+    display: block;
+    justify-content: center;
+}
+
+.social-media img {
+    width: 40px;
+    gap: 5px;
+}
+
+.twitter {
+    padding-bottom: 5px;
+}
+
+/* Sign up page stuff */
+
+.heading {
+    padding-bottom: 2%;
+    text-decoration: underline;
+}
+
+.heading-two {
+    padding-bottom: 5%;
+}
+
+.contact-one {
+    color: #D3D3D3;
+    max-width: 45%;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+.spec-input,
+.role-input {
+    background-color: #D3D3D3;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    outline: 0;
+    width: 100%;
+}
+
+.form-input {
+    background-color: #D3D3D3;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    outline: 0;
+    width: 100%;
+}
+
+.additional {
+    padding-top: 2%;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: aliceblue;
+    border: 3px solid aliceblue;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.register-button {
+    width: 20%;
+    align-items: center;
+    margin: auto;
+}
+
+.submit-button {
+    width: 15%;
+    align-items: center;
+    margin: auto;
+}
+
+.btn-group button {
+  background-color: white; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  align-items: center;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+.drop-down-one {
+    padding-bottom: 2%;
+}
+
+/* guides stuff here */
+
+.bosses {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.boss-one {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.boss-two {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.ulgrax {
+    max-width: 100%;
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.bloodbound {
+    max-width: 100%;
+    grid-column: 2;
+    grid-row: span 2;
+}
+
+.accordion {
+    background-color: #111012;
+    color: aliceblue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 14px;
+    width: 85%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    transition: 0.8s;
+    grid-column: 2;
+    justify-self: center;
+}
+
+.accordion-two {
+    background-color: #111012;
+    color: aliceblue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 14px;
+    width: 85%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    transition: 0.8s;
+    grid-column: 1;
+    justify-self: center;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #111012;
+    color: aliceblue;
+    width: 85%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    grid-column: 2;
+    justify-self: center;
+    gap: 2%;
+    text-align: left;
+    font-size: 22px;
+}
+
+.panel-two {
+    padding: 0 18px;
+    background-color: #111012;
+    color: aliceblue;
+    width: 85%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    grid-column: 1;
+    justify-self: center;
+    gap: 2%;
+    text-align: left;
+    font-size: 22px;
+}
+
+.active,
+.accordion:hover {
+    background-color: black;
+}
+
+.active,
+.accordion-two:hover {
+    background-color: black;
+}
+
+.mechanics {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.bottom-text {
+    padding-bottom: 2%;
+}
+
+/* Loot page stuff here */
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.column {
+    background-color: #111012;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.loot-table {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.column-title {
+    background-color: black;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.tooltip-image1,
+.tooltip-image2,
+.tooltip-image3,
+.tooltip-image4,
+.tooltip-image5,
+.tooltip-image6,
+.tooltip-image7,
+.tooltip-image8,
+.tooltip-image9,
+.tooltip-image10,
+.tooltip-image11,
+.tooltip-image12,
+.tooltip-image14,
+.tooltip-image15,
+.tooltip-image16,
+.tooltip-image17,
+.tooltip-image18,
+.tooltip-image19,
+.tooltip-image20,
+.tooltip-image21,
+.tooltip-image22,
+.tooltip-image23,
+.tooltip-image24,
+.tooltip-image26,
+.tooltip-image27,
+.tooltip-image28,
+.tooltip-image29,
+.tooltip-image30,
+.tooltip-image32,
+.tooltip-image33,
+.tooltip-image34,
+.tooltip-image35,
+.tooltip-image36,
+.tooltip-image37,
+.tooltip-image38,
+.tooltip-image39,
+.tooltip-image40,
+.tooltip-image41,
+.tooltip-image42,
+.tooltip-image43,
+.tooltip-image44,
+.tooltip-image45,
+.tooltip-image46,
+.tooltip-image47,
+.tooltip-image53,
+.tooltip-image54,
+.tooltip-image55,
+.tooltip-image56,
+.tooltip-image57,
+.tooltip-image58,
+.tooltip-image59,
+.tooltip-image66,
+.tooltip-image67,
+.tooltip-image68,
+.tooltip-image69,
+.tooltip-image71,
+.tooltip-image72,
+.tooltip-image74,
+.tooltip-image79,
+.tooltip-image80,
+.tooltip-image81,
+.tooltip-image82,
+.tooltip-image84,
+.tooltip-image85,
+.tooltip-image92,
+.tooltip-image93,
+.tooltip-image94,
+.tooltip-image95,
+.tooltip-image96,
+.tooltip-image97,
+.tooltip-image98,
+.tooltip-image99,
+.tooltip-image101,
+.tooltip-image102,
+.tooltip-image103 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    width: 400%;
+    z-index: 10;
+}
+
+.tooltip-image13,
+.tooltip-image25,
+.tooltip-image26,
+.tooltip-image31,
+.tooltip-image36,
+.tooltip-image37,
+.tooltip-image38,
+.tooltip-image39,
+.tooltip-image48,
+.tooltip-image49,
+.tooltip-image50,
+.tooltip-image51,
+.tooltip-image52,
+.tooltip-image60,
+.tooltip-image61,
+.tooltip-image62,
+.tooltip-image63,
+.tooltip-image64,
+.tooltip-image65,
+.tooltip-image70,
+.tooltip-image73,
+.tooltip-image74,
+.tooltip-image75,
+.tooltip-image76,
+.tooltip-image77,
+.tooltip-image78,
+.tooltip-image83,
+.tooltip-image88,
+.tooltip-image89,
+.tooltip-image90,
+.tooltip-image91,
+.tooltip-image100,
+.tooltip-image104,
+.tooltip-image105 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    width: 500%;
+    z-index: 10;
+}
+
+.tooltip-image86,
+.tooltip-image87 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    width: 410%;
+    z-index: 10;
+}
+
+.image-container:hover .tooltip-image1,
+.image-container:hover .tooltip-image2,
+.image-container:hover .tooltip-image3,
+.image-container:hover .tooltip-image4,
+.image-container:hover .tooltip-image5,
+.image-container:hover .tooltip-image6,
+.image-container:hover .tooltip-image7,
+.image-container:hover .tooltip-image8,
+.image-container:hover .tooltip-image9,
+.image-container:hover .tooltip-image10,
+.image-container:hover .tooltip-image11,
+.image-container:hover .tooltip-image12,
+.image-container:hover .tooltip-image13,
+.image-container:hover .tooltip-image14,
+.image-container:hover .tooltip-image15,
+.image-container:hover .tooltip-image16,
+.image-container:hover .tooltip-image17,
+.image-container:hover .tooltip-image18,
+.image-container:hover .tooltip-image19,
+.image-container:hover .tooltip-image20,
+.image-container:hover .tooltip-image21,
+.image-container:hover .tooltip-image22,
+.image-container:hover .tooltip-image23,
+.image-container:hover .tooltip-image24,
+.image-container:hover .tooltip-image25,
+.image-container:hover .tooltip-image26,
+.image-container:hover .tooltip-image27,
+.image-container:hover .tooltip-image28,
+.image-container:hover .tooltip-image29,
+.image-container:hover .tooltip-image30,
+.image-container:hover .tooltip-image31,
+.image-container:hover .tooltip-image32,
+.image-container:hover .tooltip-image33,
+.image-container:hover .tooltip-image34,
+.image-container:hover .tooltip-image35,
+.image-container:hover .tooltip-image36,
+.image-container:hover .tooltip-image37,
+.image-container:hover .tooltip-image38,
+.image-container:hover .tooltip-image39,
+.image-container:hover .tooltip-image40,
+.image-container:hover .tooltip-image41,
+.image-container:hover .tooltip-image42,
+.image-container:hover .tooltip-image43,
+.image-container:hover .tooltip-image44,
+.image-container:hover .tooltip-image45,
+.image-container:hover .tooltip-image46,
+.image-container:hover .tooltip-image47,
+.image-container:hover .tooltip-image48,
+.image-container:hover .tooltip-image49,
+.image-container:hover .tooltip-image50,
+.image-container:hover .tooltip-image51,
+.image-container:hover .tooltip-image52,
+.image-container:hover .tooltip-image53,
+.image-container:hover .tooltip-image54,
+.image-container:hover .tooltip-image55,
+.image-container:hover .tooltip-image56,
+.image-container:hover .tooltip-image57,
+.image-container:hover .tooltip-image58,
+.image-container:hover .tooltip-image59,
+.image-container:hover .tooltip-image60,
+.image-container:hover .tooltip-image61,
+.image-container:hover .tooltip-image62,
+.image-container:hover .tooltip-image63,
+.image-container:hover .tooltip-image64,
+.image-container:hover .tooltip-image65,
+.image-container:hover .tooltip-image66,
+.image-container:hover .tooltip-image67,
+.image-container:hover .tooltip-image68,
+.image-container:hover .tooltip-image69,
+.image-container:hover .tooltip-image70,
+.image-container:hover .tooltip-image71,
+.image-container:hover .tooltip-image72,
+.image-container:hover .tooltip-image73,
+.image-container:hover .tooltip-image74,
+.image-container:hover .tooltip-image75,
+.image-container:hover .tooltip-image76,
+.image-container:hover .tooltip-image77,
+.image-container:hover .tooltip-image78,
+.image-container:hover .tooltip-image79,
+.image-container:hover .tooltip-image80,
+.image-container:hover .tooltip-image81,
+.image-container:hover .tooltip-image82,
+.image-container:hover .tooltip-image83,
+.image-container:hover .tooltip-image84,
+.image-container:hover .tooltip-image85,
+.image-container:hover .tooltip-image86,
+.image-container:hover .tooltip-image87,
+.image-container:hover .tooltip-image88,
+.image-container:hover .tooltip-image89,
+.image-container:hover .tooltip-image90,
+.image-container:hover .tooltip-image91,
+.image-container:hover .tooltip-image92,
+.image-container:hover .tooltip-image93,
+.image-container:hover .tooltip-image94,
+.image-container:hover .tooltip-image95,
+.image-container:hover .tooltip-image96,
+.image-container:hover .tooltip-image97,
+.image-container:hover .tooltip-image98,
+.image-container:hover .tooltip-image99,
+.image-container:hover .tooltip-image100,
+.image-container:hover .tooltip-image101,
+.image-container:hover .tooltip-image102,
+.image-container:hover .tooltip-image103,
+.image-container:hover .tooltip-image104,
+.image-container:hover .tooltip-image105 {
+    opacity: 1;
+}
+
+.high {
+    min-height: 128vh;
+}
+
+/* Events page stuff here */
+
+.event-wrap {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text-box-one,
+.text-box-two {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    padding-top: 2%;
+}
+
+.text-box-one {
+    flex-direction: row;
+}
+
+.text-box-two {
+    flex-direction: row-reverse;
+}
+
+.text-box-one img,
+.text-box-two img {
+    max-width: 35%;
+    height: auto;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    margin-top: 0;
+}
+
+.text-content p {
+    margin-bottom: 0;
+}
+
+/*Mobile Media Queries*/
+@media screen and (max-width: 700px) {
+
+    .high {
+        min-height: 300vh;
+    }
+
+    .page-title {
+        display: none;
+    }
+
+    .introduction {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .hide-on-desk {
+        display: flex;
+    }
+
+    .hero-banner-desk {
+        display: none;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .nav-container {
+        display: none;
+        width: auto;
+    }
+
+    .nav-container.is-open {
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        right: 0;
+        display: block;
+        background-color: #541678;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        z-index: 1000;
+    }
+
+    .nav-container.is-open .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        font-size: 22px;
+    }
+
+    .burger-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .no-heading {
+        padding-top: 4rem;
+    }
+
+    .burger-button {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .meet-team {
+        display: none;
+    }
+
+    .meet-team-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .team-mobile-text {
+        padding-top: 3%;
+    }
+
+    /* Sign up page stuff */
+
+    .submit-button {
+        width: 60%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .contact-one {
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 60%;
+    }
+
+    /* Guide stuff */
+
+    .bosses {
+        padding-left: 5%;
+        padding-right: 5%
+    }
+
+    .boss-one,
+    .boss-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .accordion,
+    .accordion-two {
+        width: 100%;
+        grid-column: 1;
+        text-decoration: underline;
+    }
+
+    .panel,
+    .panel-two {
+        width: 100%;
+        grid-column: 1;
+    }
+
+    .ulgrax,
+    .bloodbound {
+        display: none;
+    }
+
+    /* Loot table stuff */
+
+    .loot-table {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10%;
+    }
+
+    .column {
+        width: 80%;
+    }
+
+    /* Event page stuff */
+
+    .text-box-one,
+    .text-box-two {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-box-one img,
+    .text-box-two img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+}
